@@ -1,95 +1,154 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Alice's Data Science Portfolio">
-  <link rel="icon" href="./assets/images/profile.png">
-  <title>Alice's Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="./assets/images/1311.png">
+    <title>Alice's Portfolio</title>
+    <meta name="description" content="Alice's portfolio showcasing her projects and skills.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/typography.css">
-  <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
 
-  <script defer src="./js/script.js"></script>
+    <script defer="" src="./js/script.js"></script>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <a class="nav-title-link" href="./index.html">
-      <span class="nav-title">Alice's Portfolio</span>
-    </a>
-    <a class="button" href="mailto:alice@example.com">
-      <span class="button-text">Contact Me</span>
-    </a>
-  </div>
-
-  <!-- MAIN PAGE CONTENT -->
-  <div id="main-content">
-
-    <!-- PORTFOLIO HEADER -->
-    <div id="portfolio-header">
-      <div id="portfolio-header-image-container">
-        <img src="./assets/images/banner.jpg" class="portfolio-header-image">
-      </div>
-      <div id="portfolio-header-text-container">
-        <div class="header-text">
-          <span class="main-title">Hi, I'm Alice.</span>
-          <div class="body-text">I'm a data scientist specializing in predictive modeling and data visualization. Explore my projects below.</div>
-        </div>
-        <a class="button" id="my-work-link">
-          <span class="button-text">View My Work</span>
-          <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a class="nav-title-link" href="./index.html">
+            <span class="nav-title">Alice's Portfolio</span>
         </a>
-      </div>
+        <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:alice@example.com">
+            <span class="button-text">Contact Me</span>
+        </a>
     </div>
 
-    <!-- ABOUT SECTION -->
-    <div id="about-section">
-      <span class="subheader-text">About Me</span>
-      <div class="about-section-content">
-        <div class="body-text">I'm a data scientist with a background in statistical modeling, machine learning, and data visualization. I enjoy transforming complex data into actionable insights.</div>
-      </div>
-    </div>
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
 
-    <!-- PROJECTS SECTION -->
-    <div id="my-work-section">
-      <span class="subheader-text">My Projects</span>
-      <div class="projects-container">
-        <div class="project-card">
-          <img src="./assets/images/titanic_project.png" class="project-image">
-          <div class="project-card-text-container">
-            <div class="subheader-text project-title">Titanic Survival Prediction</div>
-            <div class="body-text project-card-text">Used Random Forest and PCA to predict passenger survival with a 94% accuracy.</div>
-          </div>
-          <a class="button" href="./project-pages/titanic.html">
-            <span class="button-text">Read More</span>
-            <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
-          </a>
+        <!-- PORTFOLIO HEADER -->
+        <div id="portfolio-header">
+            <div id="portfolio-header-text-container">
+                <!-- 
+                    TODO - Change the main-title to whatever you want
+                    - Change the body-text after that to a quick introduction to what you do
+                -->
+                <div class="header-text">
+                    <span class="main-title">Hey, I'm Alice.</span>
+                    <div class="body-text">I’m a data scientist passionate about turning data into actionable insights. Explore my projects below.</div>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-          <img src="./assets/images/diagnosis_project.png" class="project-image">
-          <div class="project-card-text-container">
-            <div class="subheader-text project-title">Medical Diagnosis Prediction</div>
-            <div class="body-text project-card-text">Developed a predictive model for medical diagnoses using Random Forest and k-means clustering.</div>
-          </div>
-          <a class="button" href="./project-pages/diagnosis.html">
-            <span class="button-text">Read More</span>
-            <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- FOOTER -->
-  <div id="footer">
-    <a class="icon-link" target="_blank" href="https://github.com/alice">
-      <img src="./assets/icons/github.svg" class="footer-icon">
-    </a>
-    <a class="icon-link" href="mailto:alice@example.com">
-      <img src="./assets/icons/mail.svg" class="footer-icon">
-    </a>
-  </div>
+        <!-- ABOUT SECTION -->
+        <div id="about-section">
+            <span class="subheader-text">My Background / About Me</span>
+            <div class="about-section-content">
+                <!-- 
+                    TODO - Change the subheader-text to whatever header you want
+                    - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+                -->
+                <div class="body-text">I specialize in statistical analysis, machine learning, and data visualization. With a background in computer science, I enjoy using data to solve real-world problems and drive business decisions.</div>
+                <div class="body-text">In my free time, I like reading, coding, and exploring new technologies. I also contribute to open-source projects and enjoy collaborating with like-minded professionals.</div>
+            </div>
+        </div>
+
+        <!-- PROJECTS / MY WORK SECTION -->
+        <div id="my-work-section">
+            <!-- 
+                TODO - Change the subheader-text to whatever you want the Projects section header to say
+            -->
+            <span class="subheader-text">My Work / My Projects</span>
+
+            <div class="projects-container">
+                <!-- 
+                    TODO - Change this section to include multiple projects.
+                    For each project, follow the structure below:
+                -->
+                <div class="project-card">
+                    <div class="project-card-text-container">
+                        <div class="subheader-text project-title">Project Name</div>
+                        <div class="body-text project-card-text">
+                            <!-- 
+                                TODO - Update the description for the project.
+                                This can be anything from project goals, technologies used, or key achievements.
+                            -->
+                            This project involves data preprocessing, model building, and evaluation. It showcases my ability to handle large datasets and apply machine learning algorithms to derive meaningful predictions.
+                        </div>
+                    </div>
+                    <!-- 
+                        TODO - Add multiple images per project. You can add as many <img> elements as needed here.
+                    -->
+                    <div class="project-images">
+                        <img src="./assets/images/project1-image1.jpg" class="project-image">
+                        <img src="./assets/images/project1-image2.jpg" class="project-image">
+                    </div>
+                    <!-- 
+                        TODO - Change the GitHub link to point to your repository for this project.
+                    -->
+                    <a class="button" href="https://github.com/alice/ProjectName">
+                        <span class="button-text">View GitHub Repo</span>
+                        <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+                    </a>
+                </div>
+
+                <!-- PROJECT CARD -->
+                <div class="project-card">
+                    <div class="project-card-text-container">
+                        <div class="subheader-text project-title">Another Project</div>
+                        <div class="body-text project-card-text">
+                            <!-- TODO - Update this project description -->
+                            This project focuses on data analysis and visualization. Using various libraries and techniques, I generated insightful reports and dashboards to display key metrics.
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <img src="./assets/images/project2-image1.jpg" class="project-image">
+                        <img src="./assets/images/project2-image2.jpg" class="project-image">
+                    </div>
+                    <a class="button" href="https://github.com/alice/AnotherProject">
+                        <span class="button-text">View GitHub Repo</span>
+                        <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+                    </a>
+                </div>
+
+                <!-- PROJECT CARD -->
+                <div class="project-card">
+                    <div class="project-card-text-container">
+                        <div class="subheader-text project-title">Super Long Project</div>
+                        <div class="body-text project-card-text">
+                            <!-- TODO - Update this project description -->
+                            This project utilizes advanced machine learning techniques to classify data, and I created custom algorithms for the solution. It required extensive knowledge of Python and libraries such as Pandas, NumPy, and scikit-learn.
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <img src="./assets/images/project3-image1.jpg" class="project-image">
+                        <img src="./assets/images/project3-image2.jpg" class="project-image">
+                    </div>
+                    <a class="button" href="https://github.com/alice/SuperLongProject">
+                        <span class="button-text">View GitHub Repo</span>
+                        <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <!-- 
+            TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram)
+        -->
+        <a class="icon-link" target="_blank" href="https://twitter.com/alice">
+            <img src="./assets/icons/twitter.svg" class="footer-icon">
+        </a>
+        <!-- 
+            TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+        -->
+        <a class="icon-link" href="mailto:alice@example.com">
+            <img src="./assets/icons/mail.svg" class="footer-icon">
+        </a>
+    </div>
 </body>
 </html>
