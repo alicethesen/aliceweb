@@ -1,123 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alice's Data Science Portfolio">
+  <link rel="icon" href="./assets/images/profile.png">
+  <title>Alice's Portfolio</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/utilities.css">
 
-        /* Full-width introduction banner */
-        .intro {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .intro h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        .intro p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Project Section */
-        .projects {
-            padding: 50px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .project {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .project img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .project h3 {
-            margin-top: 15px;
-            font-size: 1.8em;
-        }
-
-        .project p {
-            margin-top: 10px;
-            font-size: 1em;
-        }
-
-        .project a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .project a:hover {
-            background-color: #555;
-        }
-    </style>
+  <script defer src="./js/script.js"></script>
 </head>
 <body>
-    <!-- Introduction Banner -->
-    <section class="intro">
-        <h1>Hey, I'm Alice</h1>
-        <p>I’m a data scientist and developer passionate about building insightful models and databases to solve real-world problems.</p>
-    </section>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a class="nav-title-link" href="./index.html">
+      <span class="nav-title">Alice's Portfolio</span>
+    </a>
+    <a class="button" href="mailto:alice@example.com">
+      <span class="button-text">Contact Me</span>
+    </a>
+  </div>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <h2>My Work / My Projects</h2>
+  <!-- MAIN PAGE CONTENT -->
+  <div id="main-content">
 
-        <!-- Project 1 -->
-        <div class="project">
-            <img src="project1-image1.jpg" alt="Project 1 Image 1">
-            <img src="project1-image2.jpg" alt="Project 1 Image 2">
-            <h3>Project Name 1</h3>
-            <p>A detailed description of Project 1. This section allows for a more comprehensive explanation of your work, tools used, and outcomes achieved.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+    <!-- PORTFOLIO HEADER -->
+    <div id="portfolio-header">
+      <div id="portfolio-header-image-container">
+        <img src="./assets/images/banner.jpg" class="portfolio-header-image">
+      </div>
+      <div id="portfolio-header-text-container">
+        <div class="header-text">
+          <span class="main-title">Hi, I'm Alice.</span>
+          <div class="body-text">I'm a data scientist specializing in predictive modeling and data visualization. Explore my projects below.</div>
         </div>
+        <a class="button" id="my-work-link">
+          <span class="button-text">View My Work</span>
+          <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+        </a>
+      </div>
+    </div>
 
-        <!-- Project 2 -->
-        <div class="project">
-            <img src="project2-image1.jpg" alt="Project 2 Image 1">
-            <img src="project2-image2.jpg" alt="Project 2 Image 2">
-            <h3>Project Name 2</h3>
-            <p>A detailed description of Project 2. Include key features, challenges solved, and technologies used here.</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+    <!-- ABOUT SECTION -->
+    <div id="about-section">
+      <span class="subheader-text">About Me</span>
+      <div class="about-section-content">
+        <div class="body-text">I'm a data scientist with a background in statistical modeling, machine learning, and data visualization. I enjoy transforming complex data into actionable insights.</div>
+      </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div id="my-work-section">
+      <span class="subheader-text">My Projects</span>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="./assets/images/titanic_project.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Titanic Survival Prediction</div>
+            <div class="body-text project-card-text">Used Random Forest and PCA to predict passenger survival with a 94% accuracy.</div>
+          </div>
+          <a class="button" href="./project-pages/titanic.html">
+            <span class="button-text">Read More</span>
+            <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+          </a>
         </div>
-    </section>
+        <div class="project-card">
+          <img src="./assets/images/diagnosis_project.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Medical Diagnosis Prediction</div>
+            <div class="body-text project-card-text">Developed a predictive model for medical diagnoses using Random Forest and k-means clustering.</div>
+          </div>
+          <a class="button" href="./project-pages/diagnosis.html">
+            <span class="button-text">Read More</span>
+            <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Contact Button -->
-    <section style="text-align:center; padding: 30px;">
-        <a href="mailto:your.email@example.com" style="padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">Contact Me</a>
-    </section>
+  <!-- FOOTER -->
+  <div id="footer">
+    <a class="icon-link" target="_blank" href="https://github.com/alice">
+      <img src="./assets/icons/github.svg" class="footer-icon">
+    </a>
+    <a class="icon-link" href="mailto:alice@example.com">
+      <img src="./assets/icons/mail.svg" class="footer-icon">
+    </a>
+  </div>
 </body>
 </html>
