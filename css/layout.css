@@ -1,170 +1,194 @@
 /* Global Styles */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+}
+
+html {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Main Content Layout */
+
+
+/* Main Page Layout */
 #main-content {
-  margin: 150px 50px;
+  margin: 225px 425px;
   display: flex;
   flex-direction: column;
   gap: 96px;
 }
 
-/* Section Spacing */
-#portfolio-header,
-#about-section,
-#my-work-section,
-#just-for-fun-section {
-  padding: 50px 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Portfolio Header */
 #portfolio-header {
-  text-align: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.main-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+#portfolio-header-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 50%;
 }
 
-.body-text {
-  font-size: 1rem;
-  margin-bottom: 20px;
+.portfolio-header-image {
+  width: 100%;
+  height: auto;
 }
 
-/* Projects Section */
+#portfolio-header-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  flex-basis: 50%;
+}
+
+
+
+/* About Section */
+#about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+
+
+/* Project Section */
 #my-work-section {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 16px;
 }
 
-.subheader-text {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.featured-project-card {
-  padding: 30px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.featured-project-card .project-card-text {
-  margin-bottom: 20px;
-}
-
-.featured-project-card .project-images {
+.projects-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 34px 16px;
 }
 
-.other-projects-row {
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-}
+    /* Featured Project (New) */
+    .featured-project {
+      width: 100%; /* Full width */
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+      padding: 20px;
+      background-color: #f9f9f9; /* Subtle background to highlight */
+      border-radius: 8px;
+    }
 
-.project-card {
-  padding: 20px;
-  flex: 1;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    .featured-project-text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
-.project-card .project-images {
-  display: flex;
-  gap: 15px;
-  margin-top: 15px;
-}
+    .featured-project-gallery {
+      display: flex;
+      gap: 16px;
+    }
 
-.project-card .project-images img {
-  width: 100%;
-  border-radius: 5px;
-}
+    .featured-project-image {
+      width: calc((100% - 32px) / 3);
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 4px;
+    }
 
-/* Just For Fun Section */
-#just-for-fun-section {
-  padding-top: 30px;
-}
+    /* Standard Project Cards */
+    .projects-row {
+      display: flex;
+      gap: 34px;
+    }
 
-.just-for-fun-content {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
+    .project-card {
+      max-width: calc((100% - 34px) / 2); /* Adjusted for two projects per row */
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+    }
 
-.fun-project-card {
-  padding: 20px;
-  background-color: #fff8e1;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    .project-card-text-container {
+      flex-direction: column;
+      display: flex;
+      gap: 16px;
+    }
 
-/* Typography */
-.fun-project-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    }
 
-.fun-project-description {
-  font-size: 1rem;
-  line-height: 1.5;
-}
+
 
 /* Responsive Adjustments */
 @media only screen and (max-width: 1200px) {
   #main-content {
-      margin: 100px 30px;
+    margin: 225px 175px;
   }
 
-  .featured-project-card {
-      flex-direction: column;
+  .featured-project-gallery {
+    flex-direction: column;
   }
 
-  .other-projects-row {
-      flex-direction: column;
+  .featured-project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-row {
+    flex-direction: column;
   }
 
   .project-card {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
 
 @media only screen and (max-width: 800px) {
   #main-content {
-      margin: 75px 20px;
+    margin: 150px 50px;
   }
 
   #portfolio-header {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 600px) {
   #main-content {
-      margin: 50px 15px;
+    margin: 125px 20px;
   }
 }
+
+/*
+  --- CHANGES MADE ---
+  1. Added `.featured-project` class to create a full-width, highlighted project section.
+  2. Designed `.featured-project-gallery` to hold three images in a row.
+  3. Adjusted `.projects-container` to stack projects with the featured one on top.
+  4. Modified `.project-card` for two projects per row below the featured project.
+  5. Updated responsive styles for seamless mobile adaptation.
+*/
