@@ -114,6 +114,7 @@ body {
       object-fit: cover;
       object-position: center;
       border-radius: 4px;
+      gap: 20px;
     }
 
     /* Standard Project Cards */
@@ -132,7 +133,7 @@ body {
     .project-card-text-container {
       flex-direction: column;
       display: flex;
-      gap: 16px;
+      gap: 20px;
     }
 
     .project-image {
