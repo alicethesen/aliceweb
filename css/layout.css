@@ -3,220 +3,71 @@
   box-sizing: border-box;
 }
 
-html {
-  text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-}
-
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Arial', sans-serif;
 }
-
-
 
 /* Main Page Layout */
 #main-content {
-  margin: 225px 425px;
-  display: flex;
-  flex-direction: column;
-  gap: 96px;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
-
-
-/* Portfolio Header */
-#portfolio-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+/* Projects Section */
+#my-work-section {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  border-radius: 8px;
 }
 
-#portfolio-header-image-container {
+/* Featured Project */
+.featured-project-card .project-images {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  flex-basis: 50%;
 }
 
-.portfolio-header-image {
-  width: 100%;
-  height: auto;
+.featured-project-card .project-card-text-container {
+  margin-bottom: 20px;
 }
 
-#portfolio-header-text-container {
+/* Other Projects Row */
+.other-projects-row {
   display: flex;
-  flex-direction: column;
-  gap: 34px;
-  flex-basis: 50%;
-}
-
-
-
-/* About Section */
-#about-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.about-section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-}
-
-
-
-/* Project Section */
-#my-work-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  gap: 34px 16px;
-}
-
-    /* Featured Project (New) */
-    .featured-project {
-      width: 100%; /* Full width */
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-      padding: 20px;
-      background-color: #f9f9f9; /* Subtle background to highlight */
-      border-radius: 8px;
-    }
-
-    .featured-project-text-container {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .featured-project-gallery {
-      display: flex;
-      gap: 16px;
-    }
-
-    .featured-project-image {
-      width: calc((100% - 32px) / 3);
-      height: 250px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 4px;
-    }
-
-    /* Standard Project Cards */
-    .other-projects-row {
-    display: flex;
-    justify-content: space-between; /* Evenly distribute projects 2 and 3 */
-    margin-top: 2rem;
-    gap: 2rem; /* Space between the two cards */
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .project-card {
-    flex: 1; /* Each project card takes equal space */
-    max-width: 48%; /* Prevents the cards from being too wide */
-    display: flex;
-    flex-direction: column;
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.project-card .project-images {
-    display: flex;
-    gap: 1rem; /* Space between images */
-    margin-top: 1rem;
-}
-
-.project-card .project-images img {
-    width: 100%; /* Images adapt to card width */
-    border-radius: 5px;
-}
-
-
-
-/* Just For Fun Section */
+/* Just for Fun Section */
 #just-for-fun-section {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 2px solid #eaeaea;
+  margin-top: 40px;
 }
 
 .just-for-fun-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem; /* Space between fun project cards */
+  display: flex;
+  gap: 20px;
 }
 
 .fun-project-card {
-    background-color: #fff8e1;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff8e1;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
 }
 
-.fun-project-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.fun-project-description {
-    font-size: 1rem;
-    color: #555;
-}
-
-
-
-/* Responsive Adjustments */
-@media only screen and (max-width: 1200px) {
-  #main-content {
-    margin: 225px 175px;
-  }
-
-  .featured-project-gallery {
-    flex-direction: column;
-  }
-
-  .featured-project-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .projects-row {
-    flex-direction: column;
-  }
-
-  .project-card {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  #main-content {
-    margin: 150px 50px;
-  }
-
-  #portfolio-header {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #main-content {
-    margin: 125px 20px;
-  }
+.fun-project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
