@@ -117,30 +117,67 @@ body {
     }
 
     /* Standard Project Cards */
-    .projects-row {
-      display: flex;
-      gap: 34px;
-    }
+    .other-projects-row {
+    display: flex;
+    justify-content: space-between; /* Evenly distribute projects 2 and 3 */
+    margin-top: 2rem;
+    gap: 2rem; /* Space between the two cards */
+}
 
-    .project-card {
-      max-width: calc((100% - 34px) / 2); /* Adjusted for two projects per row */
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-    }
+.project-card {
+    flex: 1; /* Each project card takes equal space */
+    max-width: 48%; /* Prevents the cards from being too wide */
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    .project-card-text-container {
-      flex-direction: column;
-      display: flex;
-      gap: 16px;
-    }
+.project-card .project-images {
+    display: flex;
+    gap: 1rem; /* Space between images */
+    margin-top: 1rem;
+}
 
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
-    }
+.project-card .project-images img {
+    width: 100%; /* Images adapt to card width */
+    border-radius: 5px;
+}
+
+
+
+/* Just For Fun Section */
+#just-for-fun-section {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid #eaeaea;
+}
+
+.just-for-fun-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between fun project cards */
+}
+
+.fun-project-card {
+    background-color: #fff8e1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fun-project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.fun-project-description {
+    font-size: 1rem;
+    color: #555;
+}
 
 
 
@@ -183,12 +220,3 @@ body {
     margin: 125px 20px;
   }
 }
-
-/*
-  --- CHANGES MADE ---
-  1. Added `.featured-project` class to create a full-width, highlighted project section.
-  2. Designed `.featured-project-gallery` to hold three images in a row.
-  3. Adjusted `.projects-container` to stack projects with the featured one on top.
-  4. Modified `.project-card` for two projects per row below the featured project.
-  5. Updated responsive styles for seamless mobile adaptation.
-*/
