@@ -6,6 +6,8 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Main Page Layout */
@@ -17,7 +19,7 @@ body {
 
 /* Projects Section */
 #my-work-section {
-  background-color: #f7f7f7;
+  background-color: #f2e5a1;
   padding: 40px 20px;
   border-radius: 8px;
 }
