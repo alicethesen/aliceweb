@@ -26,18 +26,18 @@ body {
 .featured-project-card .project-images {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
 }
 
 .featured-project-card .project-card-text-container {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Other Projects Row */
 .other-projects-row {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
 }
 
 .project-card {
