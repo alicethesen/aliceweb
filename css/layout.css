@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   box-sizing: border-box;
 }
@@ -18,7 +17,9 @@ body {
 
 
 
+
 /* Main Page Layout */
+
 #main-content {
   margin: 225px 425px;
   display: flex;
@@ -28,7 +29,9 @@ body {
 
 
 
+
 /* Portfolio Header */
+
 #portfolio-header {
   display: flex;
   gap: 20px;
@@ -56,7 +59,9 @@ body {
 
 
 
+
 /* About Section */
+
 #about-section {
   display: flex;
   flex-direction: column;
@@ -71,7 +76,9 @@ body {
 
 
 
+
 /* Project Section */
+
 #my-work-section {
   display: flex;
   flex-direction: column;
@@ -80,51 +87,14 @@ body {
 
 .projects-container {
   display: flex;
-  flex-direction: column;
   gap: 34px 16px;
+  flex-wrap: wrap;
 }
 
-    /* Featured Project (New) */
-    .featured-project {
-      width: 100%; /* Full width */
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-      padding: 20px;
-      background-color: #f9f9f9; /* Subtle background to highlight */
-      border-radius: 8px;
-    }
-
-    .featured-project-text-container {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .featured-project-gallery {
-      display: flex;
-      gap: 16px;
-    }
-
-    .featured-project-image {
-      width: calc((100% - 32px) / 3);
-      height: 250px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 4px;
-      gap: 20px;
-    }
-
-    /* Standard Project Cards */
-    .projects-row {
-      display: flex;
-      gap: 34px;
-    }
+    /* Project Cards */
 
     .project-card {
-      max-width: calc((100% - 34px) / 2); /* Adjusted for two projects per row */
+      max-width: calc((100% - 32px) / 3);
       display: flex;
       flex-direction: column;
       gap: 34px;
@@ -133,7 +103,7 @@ body {
     .project-card-text-container {
       flex-direction: column;
       display: flex;
-      gap: 20px;
+      gap: 16px
     }
 
     .project-image {
@@ -145,30 +115,85 @@ body {
 
 
 
-/* Responsive Adjustments */
+
+/* Project Pages */
+
+#project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-header-image {
+  width: 100%;
+  height: auto;
+}
+
+#project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+    /* Project Gallery */
+
+    #project-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .project-gallery-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 34px 16px;
+    }
+
+    .gallery-image-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .gallery-image-container.half-width {
+      width: calc((100% - 16px) / 2);
+    }
+
+    .gallery-image {
+      width: 100%;
+      height: auto;
+    }
+
+
+/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
+@media only screen and (max-width: 1600px) {
+  #main-content {
+    margin: 225px 275px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1200px) {
   #main-content {
     margin: 225px 175px;
   }
+}
 
-  .featured-project-gallery {
-    flex-direction: column;
-  }
-
-  .featured-project-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .projects-row {
-    flex-direction: column;
-  }
-
-  .project-card {
-    max-width: 100%;
+/* Large devices (laptops/desktops, 1000px and below) */
+@media only screen and (max-width: 1000px) {
+  #main-content {
+    margin: 225px 75px;
   }
 }
 
+/* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   #main-content {
     margin: 150px 50px;
@@ -177,19 +202,22 @@ body {
   #portfolio-header {
     flex-direction: column;
   }
+
+  .project-card {
+    max-width: calc((100% - 16px) / 2);
+  }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
   #main-content {
     margin: 125px 20px;
   }
+
+  .project-card {
+    max-width: 100%;
+  }
 }
 
-/*
-  --- CHANGES MADE ---
-  1. Added `.featured-project` class to create a full-width, highlighted project section.
-  2. Designed `.featured-project-gallery` to hold three images in a row.
-  3. Adjusted `.projects-container` to stack projects with the featured one on top.
-  4. Modified `.project-card` for two projects per row below the featured project.
-  5. Updated responsive styles for seamless mobile adaptation.
-*/
+
+

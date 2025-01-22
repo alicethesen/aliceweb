@@ -1,121 +1,186 @@
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="utf-8">
-    <link rel="icon" href="./assets/images/1311.png">
+
+<!-- 
+  TODO
+
+  Upload your Unemployable (or whatever photo you like) to the assets/images folder
+  and change the name of the image below to match the uploaded one
+
+  Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+  This should be the same across all pages.
+ -->
+<link rel="icon" href="./assets/images/1311.png">
     <title>Alice's Portfolio</title>
-    <meta name="description" content="Alice's portfolio showcasing her projects and skills.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A portfolio template for the Unemployables community.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
+<link rel="stylesheet" href="./css/typography.css">
+<link rel="stylesheet" href="./css/utilities.css">
 
-    <script defer src="./js/script.js"></script>
+    <script defer="" src="./js/script.js"></script>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <a class="nav-title-link" href="./index.html">
-            <span class="nav-title">Alice's Portfolio</span>
-        </a>
-        <a class="button" href="mailto:alicerthesen@gmail.com">
-            <span class="button-text">Contact Me</span>
-        </a>
+<!-- NAVBAR -->
+<div class="navbar">
+  <a class="nav-title-link" href="./index.html">
+    <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+    <span class="nav-title">Alice's Portfolio</span>
+     <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+    </a><a class="button" href="alicerthesen@gmail.com">
+      <span class="button-text">Contact Me</span>
+    </a>
+  
+</div>
+
+<!-- MAIN PAGE CONTENT -->
+<div id="main-content">
+
+  <!-- PORTFOLIO HEADER -->
+  <div id="portfolio-header">
+    <div id="portfolio-header-image-container">
+      <!-- 
+        TODO
+
+        - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+        - Change the number to point to your Unemployable & replace the OpenSea link with your own
+        - If you aren't using an Unemployable as your image, remove the entire "a" element
+      -->
+      <img src="./assets/images/1311.png" class="portfolio-header-image">
+      <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+        <span class="image-caption">Unemployables #1311</span>
+      </a>
     </div>
 
-    <!-- MAIN PAGE CONTENT -->
-    <div id="main-content">
+      <!-- 
+        TODO
 
-        <!-- PORTFOLIO HEADER -->
-        <div id="portfolio-header">
-            <div id="portfolio-header-text-container">
-                <div class="header-text">
-                    <span class="main-title">Hey, I'm Alice.</span>
-                    <div class="body-text">I’m a multidisciplinary data scientist passionate about the power of data. Explore my projects below.</div>
-                </div>
-            </div>
+        - Change the main-title to whatver you want
+        - Change the body-text after that to a quick introduction to what you do
+        - Edit the button text if you feel like it. It will link to the projects section below.
+      -->
+    <div id="portfolio-header-text-container">
+        <div class="header-text">
+          <span class="main-title">Hey, I'm Alice.</span>
+          <div class="body-text">I’m a multidisciplinary Data Analyst with an interest in beautiful and effective visualisation.</div>
         </div>
-
-        <!-- ABOUT SECTION -->
-        <div id="about-section">
-            <span class="subheader-text">About Me</span>
-            <div class="about-section-content">
-                <div class="body-text">I specialize in statistical analysis, machine learning, and data visualization. With an undergraduate degree in Genetics, I have an affinity for biological data.</div>
-                <div class="body-text">In my free time, I like reading, writing, hiking and playing football. I also contribute to open-source projects and enjoy collaborating with like-minded professionals.</div>
-            </div>
-        </div>
-
-        <!-- PROJECTS / MY WORK SECTION -->
-        <div id="my-work-section">
-            <span class="subheader-text">Projects</span>
-
-            <div class="projects-container">
-                <!-- FEATURED PROJECT -->
-                <div class="featured-project-card">
-                    <div class="project-card-text-container">
-                        <div class="subheader-text project-title">Point Process Application to Extreme CO2 Readings</div>
-                        <div class="body-text project-card-text">
-                            In this project, completed in my Honours at UCT,  my associate Manon Shapiro and I explored the application of Point Process models to extreme CO2 readings. The modelling of extreme events poses a particular challenge as many modern schools of thought, such as Extreme Value Theory, assume independence between event occurrences. But if you consider the example of an earthquake, in which the aftershocks of one earthquake can trigger another, it is clear that this assumption does not hold in many real-life scenarios. We looked at Point Processes and various extensions as a means of accounting for the ‘self-exciting’ nature of many extreme readings.
-                            All models, plots and validation techniques were produced using R. Click the link below to check out my Github repository!
-
-                        </div>
-                    </div>
-                    <div class="project-images">
-                        <img src="./assets/images/wet_hawkes_vs_marked_intensity.pdf" class="project-image">
-                        <img src="./assets/images/wet_hawkes_check.pdf" class="project-image">
-                    </div>
-                    <a class="button" href="https://github.com/alice/ProjectName">
-                        <span class="button-text">View GitHub Repo</span>
-                        <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
-                    </a>
-                </div>
-
-                <!-- OTHER PROJECTS ROW -->
-                <div class="project-card">
-                    <div class="project-card-text-container">
-                        <div class="subheader-text project-title">Another Project</div>
-                        <div class="body-text project-card-text">
-                            This project focuses on data analysis and visualization. Using various libraries and techniques, I generated insightful reports and dashboards to display key metrics.
-                        </div>
-                    </div>
-                    <div class="project-images">
-                        <img src="./assets/images/project2-image1.jpg" class="project-image">
-                        <img src="./assets/images/project2-image2.jpg" class="project-image">
-                    </div>
-                    <a class="button" href="https://github.com/alice/AnotherProject">
-                        <span class="button-text">View GitHub Repo</span>
-                        <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-card-text-container">
-                        <div class="subheader-text project-title">Super Long Project</div>
-                        <div class="body-text project-card-text">
-                            This project utilizes advanced machine learning techniques to classify data, and I created custom algorithms for the solution. It required extensive knowledge of Python and libraries such as Pandas, NumPy, and scikit-learn.
-                        </div>
-                    </div>
-                    <div class="project-images">
-                        <img src="./assets/images/project3-image1.jpg" class="project-image">
-                        <img src="./assets/images/project3-image2.jpg" class="project-image">
-                    </div>
-                    <a class="button" href="https://github.com/alice/SuperLongProject">
-                        <span class="button-text">View GitHub Repo</span>
-                        <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-    <div id="footer">
-        <a class="icon-link" target="_blank" href="https://twitter.com/alice">
-            <img src="./assets/icons/twitter.svg" class="footer-icon">
-        </a>
-        <a class="icon-link" href="mailto:alice@example.com">
-            <img src="./assets/icons/mail.svg" class="footer-icon">
+        <a class="button" id="my-work-link">
+          <span class="button-text">Check out my projects</span> 
+          <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
         </a>
     </div>
-</body>
-</html>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <!-- 
+    TODO
+
+    - Change the subheader-text to whatever header you want
+    - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+  -->
+  <div id="about-section">
+    <span class="subheader-text">About Me</span>
+    <div class="about-section-content">
+      <div class="body-text"> I’m a data scientist with a passion for uncovering meaningful insights from complex datasets. With a strong foundation in statistical analysis, machine learning, and visualization, I enjoy crafting solutions that make data actionable and impactful. With a background in Genetics, I have a particular affinity for biological data. </div>
+      <div class="body-text">In my free time I love reading, watching movies, hiking and playing 5-a-side football. I love love databases of all kinds - I can't help it. You can find my Letterboxd <a href="https://letterboxd.com/yungscoliosis/" target="_blank">here</a> and a catalogue of books I have recently read here. In 2024, I took some time off and did some travelling, which resulted in two travel pieces written for Fairlady Magazine and a near-fatal pastry addiction. I am based in Cape Town, South Africa. Let's connect and build something amazing!</div>
+    </div>
+  </div>
+
+  <!-- PROJECTS / MY WORK SECTION -->
+  <div id="my-work-section">
+    <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+    <span class="subheader-text">My Work / My Projects</span>
+
+    <div class="projects-container">
+      <!-- 
+        TODO
+
+        This is where the project cards live. Here's a base level project card for you to copy:
+        <div class="project-card">
+          <img src="./assets/images/IMAGE_NAME" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">PROJECT_NAME</div>
+            <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+          </div>
+          <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+          </a>
+        </div>
+
+        - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+            - IMAGE_NAME: the name of the image file in assets/images
+            - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+            - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+            - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+      -->
+      <div class="project-card">
+        <img src="./assets/images/CO2_times_series.jpg" class="project-image">
+        <div class="project-card-text-container">
+          <div class="subheader-text project-title">Point Process Application to CO2 Extremes</div>
+          <div class="body-text project-card-text">This project investigated Point Processes as a means of capturing fluctuations in environmental CO2 extremes from a site in the Karoo.</div>
+        </div>
+        <a class="button" href="./project-pages/project-template.html">
+          <span class="button-text">Read More</span>
+          <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="./assets/images/code.jpeg" class="project-image">
+        <div class="project-card-text-container">
+          <div class="subheader-text project-title">An Exploration of Clustering</div>
+          <div class="body-text project-card-text">A comparision of K-Means clustering against Random Forrest classification for classification of breast cancer cells. </div>
+        </div>
+        <a class="button" href="./project-pages/project-template.html">
+          <span class="button-text">Read More</span>
+          <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="./assets/images/sketchbook.jpeg" class="project-image">
+        <div class="project-card-text-container">
+          <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
+          <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+        </div>
+        <a class="button" href="./project-pages/project-template.html">
+          <span class="button-text">Read More</span>
+          <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div id="footer">
+  <!-- 
+    TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+    This should be the same across all pages.
+  -->
+  <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+    <img src="./assets/icons/instagram.svg" class="footer-icon">
+  </a>
+  <!-- 
+    TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+  
+    This should be the same across all pages.
+  -->
+  <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+    <img src="./assets/icons/twitter.svg" class="footer-icon">
+  </a>
+  <!-- 
+    TODO - Change the email after "mailto" to your contact email 
+  
+    This should be the same across all pages.
+  -->
+  <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+    <img src="./assets/icons/mail.svg" class="footer-icon">
+  </a>
+</div>
+
+
+
+</body></html>
