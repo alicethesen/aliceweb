@@ -1,0 +1,177 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Alice's Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Alice's Portfolio</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:alicerthesen@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">An exploration of Point Processes for environmental extremes</div>
+        <div class="body-text">In this project, Manon Shapiro and I looked at the ability of Point Processes to model extreme carbon dioxide readings from a Savanna site in Kimberly. Check out the <a href="https://github.com/alicethesen/Modelling-extreme-events-using-point-processes" target="_blank">Github Repository</a> for more!</div>
+        <image class="project-header-image" src="../assets/images/CO2_times_series.jpg">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">Point processes are a type of counting process which models ocurrences of an event over time. They have established use-cases in a wide range of fields including epidemiology and queueing theory. More recently, these models have been assessed for their utility in handeling data of extreme values because certain extentsions of the Point Processes do not assume independence between events occurences. Consider the system that gives rise to earthquakes. This is an example of a situation in which the assumption of independence fails, because the aftershocks that follow an initial earthquake can trigger further earthquakes, demonstrating a degree of independence between event occurences. Recently, point processes have shown to be effective in modelling earthquake systems, as well as extreme fluctuations in financial markets. We wanted to explore their use in modeling extreme peaks of carbon dioxide readings. </div>
+          <div class="body-text">Our data consisted of CO2 readings from a Savanna site in the Karoo. We investigated simple point processes and two extensions; Hawkes and Marked Hawkes processes. The Hawkes Process is self-exciting which was shown to be helpful in capturing the clusters observed in the data. A Marked Hawkes process includes an additional variable which captures the magnitude of a given event, which may be a helpful indicator as to the likelihood of successive events. We validated our models by examining the observed vs expected counting process, the compensator function, assessing the point process residuals and comparing Q-Q plots.
+            Given below are a selection of plots from the project. You can find every plot produced in the <a href="https://github.com/alicethesen/Modelling-extreme-events-using-point-processes/tree/main/All%20Plots" target="_blank">All Plots</a> folder of the <a href="https://github.com/alicethesen/Modelling-extreme-events-using-point-processes" target="_blank">Github Repository</a>. Check out the final write-up <a href="https://github.com/alicethesen/Modelling-extreme-events-using-point-processes/blob/main/SHPMAN002_THSALI002_Project_2022.pdf" target="_blank">here</a> for a much more detailed explanation of the project. 
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/Seasons_MRL.jpg" class="gallery-image">
+              <span class="image-caption">This is the mean residual life plot, which was used to determine what constituted a seasonal extreme. The empirical mean is given by the solid black line and the 95% central
+                limit theorem-based confidence intervals are given by the green dashed line. For comparison, the 90th percentile
+                and the chosen threshold which is used to extract the point process realisation
+                are given.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/Seasons_extremes.jpg" class="gallery-image">
+              <span class="image-caption">This plot demonstrates the readings which are considered extreme based on the aforementioned mean residual life plot. As demonstrated above, the clustering of events observed in the dry season is very extreme in comparison to those in the wet season.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/wet_hawkes_intensity_sub.jpg" class="gallery-image">
+              <span class="image-caption">The above is a sub-section of the conditional intensity function of the Hawke's Process for the wet season. At the occurrence of an event, the conditional intensity spikes, decaying exponentially thereafter. </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/wet_hawkes_vs_marked_intensity.jpg" class="gallery-image">
+              <span class="image-caption">Here is a comparison of the conditional intensity functions of the Hawkes against the Marked Hawkes Process.</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/wet_hawkes_check.jpg" class="gallery-image">
+              <span class="image-caption">Given above are some of the validation plots used to assess model efficacy. Good model fit would be demonstrated by a closely fitted transformed counting process (Plot C) and little evidence of auto-correlation of residula (Plot D).</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
