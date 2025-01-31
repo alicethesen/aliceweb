@@ -1,6 +1,6 @@
 getwd()
 
-wd <- "/Users/alicethesen/Desktop/R/Practice Data Sets"
+wd <- "/Users/yourname/Desktop/workingfolder"
 
 setwd(wd)
 
